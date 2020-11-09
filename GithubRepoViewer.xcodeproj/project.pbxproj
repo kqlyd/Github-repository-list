@@ -102,8 +102,7 @@
 		5E395B222556AAB900A2D870 /* GithubRepoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				5E395B232556AAB900A2D870 /* AppDelegate.swift */,
-				5E395B2E2556AABF00A2D870 /* LaunchScreen.storyboard */,
+				5E3B2A0E2559260F0059F9CA /* Application layer */,
 				5E395B3E2556AF8200A2D870 /* PresentationLayer */,
 				5E395B452556AFFB00A2D870 /* ServiceLayer */,
 				5E395B542556B23F00A2D870 /* Models */,
@@ -125,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				5E395B3F2556AFA400A2D870 /* Modules */,
+				5E395B2E2556AABF00A2D870 /* LaunchScreen.storyboard */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -176,6 +176,14 @@
 				5E395B652556F17D00A2D870 /* RepoCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		5E3B2A0E2559260F0059F9CA /* Application layer */ = {
+			isa = PBXGroup;
+			children = (
+				5E395B232556AAB900A2D870 /* AppDelegate.swift */,
+			);
+			path = "Application layer";
 			sourceTree = "<group>";
 		};
 		5EABBB7925573E64000BBF3D /* RepoDetail */ = {
