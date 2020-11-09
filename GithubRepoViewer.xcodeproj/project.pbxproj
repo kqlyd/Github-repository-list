@@ -102,7 +102,7 @@
 		5E395B222556AAB900A2D870 /* GithubRepoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				5E3B2A0E2559260F0059F9CA /* Application layer */,
+				5E3B2A0E2559260F0059F9CA /* ApplicationLayer */,
 				5E395B3E2556AF8200A2D870 /* PresentationLayer */,
 				5E395B452556AFFB00A2D870 /* ServiceLayer */,
 				5E395B542556B23F00A2D870 /* Models */,
@@ -178,12 +178,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		5E3B2A0E2559260F0059F9CA /* Application layer */ = {
+		5E3B2A0E2559260F0059F9CA /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
 				5E395B232556AAB900A2D870 /* AppDelegate.swift */,
 			);
-			path = "Application layer";
+			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
 		5EABBB7925573E64000BBF3D /* RepoDetail */ = {
