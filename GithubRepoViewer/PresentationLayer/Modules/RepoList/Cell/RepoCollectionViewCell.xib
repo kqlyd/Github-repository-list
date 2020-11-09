@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RepoCell" id="gTV-IL-0wX" customClass="RepoCollectionViewCell" customModule="GithubRepoViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z10-VL-HDi">
+                        <rect key="frame" x="20" y="64" width="255" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HL0-Pm-iot">
+                        <rect key="frame" x="20" y="10" width="43" height="20"/>
+                        <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-2D-gMS">
+                        <rect key="frame" x="260" y="9" width="15" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jem-2B-E2e">
+                        <rect key="frame" x="20" y="38" width="42.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="jem-2B-E2e" firstAttribute="top" secondItem="HL0-Pm-iot" secondAttribute="bottom" constant="8" symbolic="YES" id="8VD-oK-QTm"/>
+                <constraint firstItem="HL0-Pm-iot" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="QcA-1e-kEg"/>
+                <constraint firstAttribute="trailing" secondItem="AKa-2D-gMS" secondAttribute="trailing" constant="20" id="We7-AN-KAe"/>
+                <constraint firstItem="HL0-Pm-iot" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="cUF-tg-RY1"/>
+                <constraint firstItem="Z10-VL-HDi" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="ejW-QR-cUf"/>
+                <constraint firstItem="AKa-2D-gMS" firstAttribute="centerY" secondItem="HL0-Pm-iot" secondAttribute="centerY" id="h5d-zL-QHx"/>
+                <constraint firstItem="jem-2B-E2e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="nVV-nh-Rh5"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Z10-VL-HDi" secondAttribute="trailing" constant="20" id="nss-Ii-AfA"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Z10-VL-HDi" secondAttribute="bottom" constant="10" id="s1O-u1-g5g"/>
+                <constraint firstItem="Z10-VL-HDi" firstAttribute="top" secondItem="jem-2B-E2e" secondAttribute="bottom" constant="8" symbolic="YES" id="z3d-11-9g0"/>
+            </constraints>
+            <size key="customSize" width="295" height="119"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Z10-VL-HDi" id="jlQ-E5-y0Y"/>
+                <outlet property="idLabel" destination="AKa-2D-gMS" id="GSq-go-yyA"/>
+                <outlet property="nameLabel" destination="HL0-Pm-iot" id="Ybc-5E-bBv"/>
+                <outlet property="ownerLabel" destination="jem-2B-E2e" id="G2J-ax-GeZ"/>
+            </connections>
+            <point key="canvasLocation" x="261.59420289855075" y="82.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
