@@ -15,8 +15,8 @@ final class RepoListView: UIViewController {
     private var presenter: RepoListPresenterProtocol!
     private var refreshController: UIRefreshControl!
     
-    private enum cellIdentifier: String{
-        case cellRepoList
+    private enum CellIdentifier: String{
+        case CellRepoList
     }
     
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ final class RepoListView: UIViewController {
  
     //MARK: - Setup View
     private func setupCollectionView(){
-        collectionView?.register(UINib(nibName: "cellRepoListIdentifier.rawValue", bundle: nil), forCellWithReuseIdentifier: cellIdentifier.cellRepoList.rawValue)
+        collectionView?.register(UINib(nibName: "RepoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: CellIdentifier.CellRepoList.rawValue)
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.backgroundColor = .lightGray
@@ -91,6 +91,7 @@ extension RepoListView: UICollectionViewDelegate{
         let repoDetailView = ModuleBuilderService.createRepoDetailModule(repo: repo)
         navigationController?.pushViewController(repoDetailView, animated: true)
     }
+    
 }
 
 //MARK: - UICollectionViewDataSource
@@ -100,7 +101,7 @@ extension RepoListView: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier.cellRepoList.rawValue, for: indexPath) as! RepoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.CellRepoList.rawValue, for: indexPath) as! RepoCollectionViewCell
         let item = presenter.getRepo(index: indexPath.row)
         cell.configureCell(item: item)
         return cell
